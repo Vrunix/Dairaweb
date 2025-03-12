@@ -15,7 +15,6 @@ body {
 /* Contenedor principal */
 .contenedor {
     display: flex;
-    flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
     justify-content: space-between;
@@ -97,57 +96,7 @@ body {
     text-align: left;
 }
 
-/* 🔹 Sección de Comentarios (AHORA ESTÁ DEBAJO DE LAS FOTOS) */
-.comentarios {
-    width: 100%;
-    max-width: 800px;
-    margin-top: 40px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* Estilos para el cuadro de comentarios */
-.comentarios textarea {
-    width: 90%;
-    height: 100px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: none;
-    resize: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-/* Botón de enviar comentario */
-.comentarios button {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-top: 10px;
-    transition: background 0.3s;
-}
-
-.comentarios button:hover {
-    background-color: #ff3333;
-}
-
-/* Lista de comentarios */
-#comentariosLista {
-    margin-top: 20px;
-    text-align: left;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-/* Sección de Música */
+/* Sección de Música (abajo) */
 .musica {
     margin-top: 40px;
     text-align: center;
@@ -236,11 +185,8 @@ body {
         margin-left: 0;
         margin-top: 10px;
     }
-
-    .comentarios {
-        width: 95%;
-    }
 }
+
 
 
 

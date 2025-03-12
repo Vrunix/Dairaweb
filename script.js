@@ -11,19 +11,18 @@ document.addEventListener("visibilitychange", function () {
 
 // Control de música
 let musica = document.getElementById("musica");
+let botonMusica = document.getElementById("toggleMusic");
 
-// Comentarios
-document.getElementById("enviarComentario").addEventListener("click", function () {
-    let comentarioTexto = document.getElementById("comentarioTexto").value.trim();
-    if (comentarioTexto !== "") {
-        let nuevoComentario = document.createElement("div");
-        nuevoComentario.classList.add("comentario");
-        nuevoComentario.textContent = comentarioTexto;
-
-        document.getElementById("comentariosLista").appendChild(nuevoComentario);
-        document.getElementById("comentarioTexto").value = ""; // Limpiar el textarea
+botonMusica.addEventListener("click", function () {
+    if (musica.paused) {
+        musica.play();
+        botonMusica.textContent = "Pausar Música";
+    } else {
+        musica.pause();
+        botonMusica.textContent = "Reproducir Música";
     }
 });
+
 
 
 
